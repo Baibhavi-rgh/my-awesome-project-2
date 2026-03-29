@@ -5,7 +5,7 @@ def get_response(user_input):
 
     # Greetings
     if any(word in user_input for word in ["hello", "hi", "hey"]):
-        return "Hello! 👋 I am your Digital Help Assistant. How can I help you?"
+        return "Hello! I am your Digital Help Assistant. How can I help you?"
 
     # Email help
     elif "email" in user_input:
@@ -17,7 +17,7 @@ def get_response(user_input):
 
     # OTP safety
     elif "otp" in user_input:
-        return "⚠️ Never share your OTP with anyone."
+        return " Never share your OTP with anyone."
 
     # Internet basics
     elif "internet" in user_input:
@@ -37,4 +37,4 @@ def get_response(user_input):
 
     # Default response
     else:
-        return "Sorry 😔 I didn't understand. Try asking about email, password, internet, or safety."
+        return "Sorry, I didn't understand. Try asking about email, password, internet, or safety."
