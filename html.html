@@ -1,0 +1,53 @@
+<DOCTYPE html>
+<html>
+<head>
+    <title>Digital Help Chatbot</title>
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #e6f2ff;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        h1 {
+            color: darkblue;
+        }
+
+        input {
+            padding: 10px;
+            width: 300px;
+            border-radius: 5px;
+            border: 1px solid gray;
+        }
+
+        button {
+            padding: 10px 15px;
+            background-color: blue;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .response {
+            margin-top: 20px;
+            font-size: 18px;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+
+<h1>🤖 Digital Help Chatbot</h1>
+
+<form method="POST">
+    <input type="text" name="user_input" placeholder="Ask something..." required>
+    <button type="submit">Send</button>
+</form>
+
+<div class="response">
+    {{ response }}
+</div>
+
+</body>
+</html>
